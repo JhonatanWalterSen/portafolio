@@ -84,6 +84,6 @@ const preloader = document.querySelector('.preloader');
 
 window.onload = function () {
     setTimeout(() =>{
-        // finisedLoading();
+        finisedLoading();
     },5000)
 }
