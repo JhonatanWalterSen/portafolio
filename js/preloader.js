@@ -9,6 +9,7 @@ let preload = () => {
               console.log(block,i)
          }, interval);
          interval +=500;
+         
     });
 
     function animate(block, index){

@@ -75,7 +75,16 @@
     .links{
         display: var(--none);
     }
-    .activeMenu{
-
+    .completeHeader{
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+    }
+    .linksMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 }
