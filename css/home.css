@@ -34,11 +34,11 @@
     height: 35px;
 }
 
-.menu .links{
+.links{
     display: flex;
 }
 
-.menu .links a{
+.links a{
     padding: 16px 22px;
     color: var(--blanco);
     text-decoration: var(--none);
@@ -46,11 +46,11 @@
     transition: border .3s ease;
 }
 
-.menu .links a:hover{
+.links a:hover{
     border-bottom-color: var(--rojo-claro);
 }
 
-.menu .links a.active{
+.links a.active{
     border-bottom-color: var(--rojo-claro);
 }
 
@@ -71,5 +71,11 @@
         width: 35px;
         height: 35px;
         margin: 15px;
+    }
+    .links{
+        display: var(--none);
+    }
+    .activeMenu{
+
     }
 }

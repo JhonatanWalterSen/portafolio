@@ -35,36 +35,36 @@ let preload = () => {
         }, 1500)
     }
     // text
-    const preload_text = document.querySelector('.preload-text');
-    let dots =1;
-    setInterval(() => {
-        switch (dots) {
-            case 1:
-                preload_text.textContent="...Cargando";
-                dots++;
-                break;
-            case 2:
-                preload_text.textContent="..Cargando.";
-                dots++;
-                break;
-            case 3:
-                preload_text.textContent=".Cargando..";
-                dots++;
-                break;
-            case 4:
-                preload_text.textContent="Cargando...";
-                dots++;
-                break;
-            case 5:
-                preload_text.textContent=".Cargando..";
-                dots++;
-                break;
-            case 6:
-                preload_text.textContent="..Cargando.";
-                dots=1;
-                break;
-        }
-    }, 500);
+//     const preload_text = document.querySelector('.preload-text');
+//     let dots =1;
+//     setInterval(() => {
+//         switch (dots) {
+//             case 1:
+//                 preload_text.textContent="...Cargando";
+//                 dots++;
+//                 break;
+//             case 2:
+//                 preload_text.textContent="..Cargando.";
+//                 dots++;
+//                 break;
+//             case 3:
+//                 preload_text.textContent=".Cargando..";
+//                 dots++;
+//                 break;
+//             case 4:
+//                 preload_text.textContent="Cargando...";
+//                 dots++;
+//                 break;
+//             case 5:
+//                 preload_text.textContent=".Cargando..";
+//                 dots++;
+//                 break;
+//             case 6:
+//                 preload_text.textContent="..Cargando.";
+//                 dots=1;
+//                 break;
+//         }
+//     }, 500);
 }
 
 preload();
@@ -87,3 +87,4 @@ window.onload = function () {
         finisedLoading();
     },5000)
 }
+
