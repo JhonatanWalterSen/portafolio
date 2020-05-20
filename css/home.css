@@ -75,10 +75,47 @@
     .links{
         display: var(--none);
     }
+    .links a{
+        padding: 40px 22px;
+        font-size: 20px;
+        position: relative;
+        color: rgba(255,255,255,0.1);
+    }
+    .links a:before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        color: var(--color-secundario);
+        padding: 40px 0px;
+        white-space: nowrap;
+    }
+    .links:hover a:before{
+        animation: animate 0.5s steps(12) forwards;;
+    }
+    @keyframes animate {
+        0%{ width: 387.063px;}
+        100%{ width: 0px;}        
+    }
+
+    .links a:hover:before{
+        animation: animateTwo 2s steps(12) forwards;;
+    }
+    @keyframes animateTwo {
+        0%{ width: 0px;}
+        100%{ width: 387.063px;}        
+    }
+    .flyX{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
     .completeHeader{
         height: 100vh;
         position: fixed;
         width: 100%;
+        transition: all 1s ease-in-out
     }
     .linksMobile{
         display: flex;

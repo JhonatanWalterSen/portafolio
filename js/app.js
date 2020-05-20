@@ -2,10 +2,12 @@ function iconmenu(){
     let active = 'activeMenu';
     let complete ='completeHeader';
     let newLinks ='linksMobile';
+    let flyX = 'flyX';
     let imenu = document.querySelector('.menu-tablet-mobile');
     const brand = document.querySelector('.brand');
     const header = document.querySelector('.header');
     const links = document.querySelector('.links');
+    const auth = document.querySelector('.auth');
     imenu.addEventListener('click', () => {
         if(imenu.classList.contains(active)){
             imenu.src="img/icon-menu.png";
@@ -30,6 +32,15 @@ function iconmenu(){
         }else if(links !== newLinks){ 
             links.classList.add(newLinks); 
         }
+    });
+
+    // X
+    imenu.addEventListener('click', () => {
+    if(auth.classList.contains(flyX)){
+        auth.classList.remove(flyX);
+    }else{
+        auth.classList.add(flyX);
+    }
     });
 }
 
