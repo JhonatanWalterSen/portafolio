@@ -79,13 +79,13 @@ const preloader = document.querySelector('.preloader');
 
 
     // Cuando la pagina carga
-    // window.onload = function (){
-    //     finisedLoading();
-    // }
-
-window.onload = function () {
-    setTimeout(() =>{
+    window.onload = function (){
         finisedLoading();
-    },5000)
-}
+    }
+
+// window.onload = function () {
+//     setTimeout(() =>{
+//         finisedLoading();
+//     },5000)
+// }
 
