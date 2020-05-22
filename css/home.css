@@ -8,7 +8,8 @@
     --x100:100;
     --x1000:1000;
     --Lexend:'Lexend Deca', sans-serif;
-    --Raleway:'Raleway', sans-serif;;
+    --Raleway:'Raleway', sans-serif;
+    --Open:'Open Sans', sans-serif;
 }
 
 *{
@@ -205,20 +206,49 @@
     width: 100%;
     background-color: var(--color-primario);
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .descgeneral{
     display: flex;
+    flex: 1;
 }
+.descgeneral .mitad:nth-child(1){
+    text-align: center;
+    position: relative;
+}
+.mitad img{
+    width: 100%;
+    max-width: 75%;
+    height: 100%;
+    max-height: 500px;
+}
+
 .mitad{
     flex: 0 0 50%;
 }
+
 .details-info{
     color: var(--blanco);
     background-color: #192532;
-    padding: 30px 20px 20px;
+    padding: 30px 20px 20px;display: flex
 }
-.details1{
-    display: flex;
+.details1,
+.details2{
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--Open);
+}
+.details1 p,
+.details2 p{
+    margin-bottom: 10px;
+}
+.details1 p span,
+.details2 p span{
+    font-weight: 400;
 }
 .desc_name{
     color: var(--color-secundario);
@@ -260,6 +290,101 @@
     color: #9b9b9b;
     margin-bottom: 20px;
 }
+
+
+/* section Filter */
+
+
+.mainfilter{
+    background-color: #2f2f31;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.mainfilter .filterbox{
+    text-align: center;
+    width: 100%;
+}
+.mywork{
+    color: var(--color-secundario);
+    display: block;
+    text-transform: capitalize;
+    font-family: var(--Raleway);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 0.75;
+    margin: 0;
+    position: relative;
+}
+.myport{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    letter-spacing: 1px;
+    font-family: var(--Raleway);
+}
+.filterbox ul{
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.filterbox ul li{
+    list-style-type: none;
+    display: block;
+    box-sizing: border-box;
+}
+.filterbox ul li a{
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--blanco);
+    margin: 10px 20px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: var(--Open);
+}
+.filterbox ul li a:hover{
+    color: var(--color-secundario);
+}
+.activefilter{
+    border-bottom: 2px solid var(--color-secundario);
+    color: var(--color-secundario) !important;
+    padding: 10px 0;
+}
+.imgbox{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.imgbox img{
+    height: 300px;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+.imgbox div{
+    flex: 0 1 calc(33% - 2rem);
+}
+
 /* v1.0  */
  /*
 .header{

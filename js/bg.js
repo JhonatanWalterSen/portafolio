@@ -12,7 +12,7 @@ function scrollHeader(){
     const nav = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
-        console.log(scrolled);
+        // console.log(scrolled);
         if(scrolled >= 50){
             nav.style.background="#1D3357";
             // nav.style.border="0";
@@ -45,3 +45,16 @@ function letraCambia() {
 }
 
 letraCambia();
+
+function filter() {
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('click', () => {
+        let btnfilter = document.querySelectorAll('.buttons');
+        btnfilter.NodeListOf<filter>
+        console.log(btnfilter);
+        });
+    })
+}
+
+filter();
+
