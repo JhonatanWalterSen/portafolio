@@ -47,13 +47,20 @@ function letraCambia() {
 letraCambia();
 
 function filter() {
-    document.addEventListener("DOMContentLoaded", function () {
-        window.addEventListener('click', () => {
-        let btnfilter = document.querySelectorAll('.buttons');
-        btnfilter.NodeListOf<filter>
-        console.log(btnfilter);
+    $(document).ready(function(){
+        $('.buttons').click(function(){
+            var buttonvalue = $(this).attr('data-filter');
+            if(buttonvalue == 'todo'){
+                $('.image-filter').show('1000');
+            }
+            else{
+                $('.image-filter').not('.'+buttonvalue).hide('200');
+                $('.image-filter').filter('.'+buttonvalue).show('200');
+            }
+            // $('buttons').addClass('.activefilter');
+            $(this).addClass('activefilter').siblings().removeClass('activefilter');
         });
-    })
+    });
 }
 
 filter();
