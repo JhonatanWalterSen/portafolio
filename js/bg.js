@@ -66,7 +66,7 @@ letraCambia();
 // filter();
 
 
-function isotopoFilter() {
+function filtergallery() {
     
     $(document).ready(function(){
         $(".buttons").click(function(){
@@ -85,4 +85,4 @@ function isotopoFilter() {
         });
     });
 }
-isotopoFilter();
+filtergallery();
