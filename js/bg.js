@@ -67,13 +67,22 @@ letraCambia();
 
 
 function isotopoFilter() {
-    $(".imgbox").isotope({
-        itemSelector: '.card',
-        layoutMode: 'fitRows'
-    });
-    $(".filterbox ul li a").click(function () {
-        $(".filterbox ul li a").removeClass("activefilter")
-       $(this).addClass("activefilter"); 
+    
+    $(document).ready(function(){
+        $(".buttons").click(function(){
+            var value = $(this).attr("data-filter");
+            if (value == "todo") {
+                $(".filter").show("1000");
+            }
+            else{
+                $(".filter").not("."+value).hide("1000");
+                $(".filter").filter("."+value).show("1000");
+            }
+            // add active class
+            $("ul .buttons").click(function() {
+                $(this).addClass("activefilter").siblings().removeClass();
+            });
+        });
     });
 }
 isotopoFilter();
