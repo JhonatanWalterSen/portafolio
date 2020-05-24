@@ -46,22 +46,34 @@ function letraCambia() {
 
 letraCambia();
 
-function filter() {
-    $(document).ready(function(){
-        $('.buttons').click(function(){
-            var buttonvalue = $(this).attr('data-filter');
-            if(buttonvalue == 'todo'){
-                $('.image-filter').show('1000');
-            }
-            else{
-                $('.image-filter').not('.'+buttonvalue).hide('200');
-                $('.image-filter').filter('.'+buttonvalue).show('200');
-            }
-            // $('buttons').addClass('.activefilter');
-            $(this).addClass('activefilter').siblings().removeClass('activefilter');
-        });
+// function filter() {
+//     $(document).ready(function(){
+//         $('.buttons').click(function(){
+//             var buttonvalue = $(this).attr('data-filter');
+//             if(buttonvalue == 'todo'){
+//                 $('.image-filter').show('1000');
+//             }
+//             else{
+//                 $('.image-filter').not('.'+buttonvalue).hide('200');
+//                 $('.image-filter').filter('.'+buttonvalue).show('200');
+//             }
+//             // $('buttons').addClass('.activefilter');
+//             $(this).addClass('activefilter').siblings().removeClass('activefilter');
+//         });
+//     });
+// }
+
+// filter();
+
+
+function isotopoFilter() {
+    $(".imgbox").isotope({
+        itemSelector: '.card',
+        layoutMode: 'fitRows'
+    });
+    $(".filterbox ul li a").click(function () {
+        $(".filterbox ul li a").removeClass("activefilter")
+       $(this).addClass("activefilter"); 
     });
 }
-
-filter();
-
+isotopoFilter();

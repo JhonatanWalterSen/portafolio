@@ -374,16 +374,14 @@
     padding-top: 35px;
     padding-bottom: 35px;
 }
-
-.imgbox img{
-    height: 300px;
+.cardfil{
+    flex: 0 0 calc(33.3% - 1rem);
+    position: relative;
+}
+.cardfil img{
     width: 100%;
-    min-width: 300px;
-    margin-bottom: 30px;
 }
-.imgbox div{
-    flex: 0 1 calc(33% - 2rem);
-}
+
 
 /* v1.0  */
  /*
@@ -501,3 +499,35 @@
         height: 100vh;
     }
 } */
+
+
+/* ACERCA DE MI */
+/* mi nombre es jhonatan me gusta el entorno de desarrllo en web
+me concidero una persona autodidacta por lo que
+anterior mente trabaje en MccannWolrd como desarrolladoro para sodimac */
+
+/* exitoso */
+/* Si, por que anteriormente me propuse aprender herramientas para trabajar y lo lgré 
+ahopra sigo aprendiendo poder seguir aprendiendo ya que la tecnoglogia siempre cambia */
+
+/* trabajar con nostros */
+/* objetivos a larga plazo */
+
+/* punto mas fuerte */
+ /* habilidad para hacer las cosas
+ concentrado en proyectos */
+
+ /* dinero o trabajo */
+ /* dinero siempre es imprtante
+ pero el trabajo lo es más aun */
+
+ /* iria bien en el trabajo */
+ /* hablidades expieriencias intereses */
+
+/* jefe anterior */
+/* la lealtad compañerismo liderazgo, energia creatividad trabajo duro */
+
+/* que memmotiva */
+/* me motiva los desafios, los cambios logros y reconocimientos */
+
+/* acerca de los pryectos que metodlogías usan */
