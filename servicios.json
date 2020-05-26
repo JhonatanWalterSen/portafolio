@@ -1,0 +1,22 @@
+{
+    "servicios" : [
+        {
+            "id" : 1,
+            "img" : "contact.png",
+            "titulo" : "Trabajo en Equipo",
+            "descripcion" : "Capacidad de llevarme bien con los compañeros y colaborano conjuntamente se consigue un trabajo eficiente."
+        },
+        {
+            "id" : 2,
+            "img" : "swap.png",
+            "titulo" : "Adaptar a Cambios",
+            "descripcion" : "Salir de la zona de confort, adáptandose a los cambios y nuevos entornos"
+        },
+        {
+            "id" : 3,
+            "img" : "head.png",
+            "titulo" : "Resolver conflictos",
+            "descripcion" : "Encontrar soluciones rápidas y efectivas a los problemas y conflictos interpersonales."
+        }
+    ]
+}

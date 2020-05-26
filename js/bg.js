@@ -86,3 +86,32 @@ function filtergallery() {
     });
 }
 filtergallery();
+
+function datosSkills() {
+    fetch('servicios.json')
+    .then( (respuesta) => {
+        return respuesta.json();
+    })
+    .then((datos) =>{
+        let html='';
+        datos.servicios.forEach(servicios => {
+            html += `
+                    <div class="card">
+                        <div class="face face1">
+                            <div class="content">
+                                <img src="img/${servicios.img}">
+                                <h3 class="titleSkill">${servicios.titulo}</h3>
+                            </div>
+                        </div>
+                        <div class="face face2">
+                            <div class="content">
+                                <p>${servicios.descripcion}</p>
+                            </div>
+                        </div>
+                    </div>
+            `;
+        });
+        document.querySelector('#containerCards').innerHTML = html;
+    })
+}
+datosSkills();
