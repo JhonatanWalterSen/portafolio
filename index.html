@@ -122,9 +122,27 @@
                 </li>
             </ul>
             <div class="imgbox">
+                <!-- img -->
                 <div class="box filter web">
-                        <img class="img-f" src="img/laptop.jpg" alt="">
+                        <img data-modal-target="#modal" class="img-f" src="img/laptop.jpg">
                 </div>
+                <!-- modal img -->
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <div class="title-modal">JALAR NOMBRE</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-im">
+                            <img src="">
+                        </div>
+                        <div class="modal-desc">
+                            <p class="desc-info"> JALAR descripción</p>
+                            <a href="#" class="desc-btns"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal-overlay"></div>
                 <div class="box filter xd">
                     <img src="img/mac.jpg" alt="">
                 </div>
