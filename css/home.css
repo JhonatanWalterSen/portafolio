@@ -510,6 +510,7 @@
 .box img{
     width: 100%;
     cursor: pointer;
+    height: 250px;
 }
 .imgbox .filter:hover .img-f{
     background-color: var(--rojo-claro);
@@ -555,6 +556,9 @@
 .modal-body{
     padding: 10px 15px;
 }
+.modal-im img{
+    max-width: 50%;
+}                           
 #modal-overlay{
     position: fixed;
     top: 0;
@@ -569,6 +573,13 @@
     pointer-events: all;
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-im,
+.modal-desc {
+    padding: 10px 20px;
+}
+.desc-info{
+    padding: 10px 0;
 }
 .desc-info{
     color: var(--blanco);

@@ -1,0 +1,28 @@
+{
+    "portafolio" : [
+        {
+            "categoria":"web",
+            "imagen": "Web-Biblioteca.png",
+            "titulo": "Biblioteca Virtual",
+            "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
+            "tipo": "Repositorio",
+            "href": "#"
+        },
+        {
+            "categoria":"web",
+            "imagen": "Web-BlogViajes.png",
+            "titulo": "Blog Viajes",
+            "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
+            "tipo": "Repositorio",
+            "href": "#"
+        },
+        {
+            "categoria":"web",
+            "imagen": "Web-Mailing.png",
+            "titulo": "Mailing",
+            "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
+            "tipo": "Repositorio",
+            "href": "#"
+        }
+    ]
+}

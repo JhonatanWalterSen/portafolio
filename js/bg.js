@@ -87,6 +87,84 @@ function filtergallery() {
 }
 filtergallery();
 
+
+function datosPortafolio() {
+    fetch('portafolio.json')
+    .then( (respuesta) => {
+        return respuesta.json();
+    })
+    .then((datos) =>{
+        let html='';
+        datos.portafolio.forEach(portafolio => {
+            html += `
+            <div class="box filter ${portafolio.categoria}">
+                <img data-modal-target="#modal" class="img-f" src="img/${portafolio.imagen}">
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <div class="title-modal">${portafolio.titulo}</div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-im">
+                        <img src="img/${portafolio.imagen}">
+                    </div>
+                    <div class="modal-desc">
+                        <p class="desc-info">${portafolio.descripcion}</p>
+                        <a href="${portafolio.href}" class="desc-btns">${portafolio.tipo}</a>
+                    </div>
+                </div>
+            </div>
+            <div id="modal-overlay"></div>
+            `;
+        });
+        document.querySelector('#imgbox').innerHTML = html;
+    })
+}
+datosPortafolio();
+
+function modalPopup() {
+    const openModalButtons = document.querySelectorAll('[data-modal-target]')
+    const closeModalButtons = document.querySelectorAll('[data-close-button]')
+    const overlay = document.getElementById('modal-overlay')
+
+    openModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = document.querySelector(button.dataset.modalTarget)
+            openModal(modal)
+        })
+    })
+    
+    overlay.addEventListener('click', () => {
+        const modals =document.querySelectorAll('.modal.active')
+        modals.forEach(modal => {
+            closeModal(modal)
+        })
+    })
+
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const modal = button.closest('.modal')
+            closeModal(modal)
+        })
+    })
+
+    function openModal(modal) {
+        if(modal == null) return
+        modal.classList.add('active')
+        overlay.classList.add('active')
+    }
+
+    function closeModal(modal) {
+        if(modal == null) return
+        modal.classList.remove('active')
+        overlay.classList.remove('active')
+    }
+    
+} 
+modalPopup();
+
+
 function datosSkills() {
     fetch('servicios.json')
     .then( (respuesta) => {
@@ -117,43 +195,3 @@ function datosSkills() {
 datosSkills();
 
 //
-function modalPopup() {
-    const openModalButtons = document.querySelectorAll('[data-modal-target]')
-    const closeModalButtons = document.querySelectorAll('[data-close-button]')
-    const overlay = document.getElementById('modal-overlay')
-
-    openModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = document.querySelector(button.dataset.modalTarget)
-            openModal(modal)
-        })
-    })
-
-    overlay.addEventListener('click', () => {
-        const modals =document.querySelectorAll('.modal.active')
-        modals.forEach(modal => {
-            closeModal(modal)
-        })
-    })
-
-    closeModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = button.closest('.modal')
-            closeModal(modal)
-        })
-    })
-
-    function openModal(modal) {
-        if(modal == null) return
-        modal.classList.add('active')
-        overlay.classList.add('active')
-    }
-
-    function closeModal(modal) {
-        if(modal == null) return
-        modal.classList.remove('active')
-        overlay.classList.remove('active')
-    }
-    
-} 
-modalPopup()
