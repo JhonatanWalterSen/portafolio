@@ -121,48 +121,51 @@ function datosPortafolio() {
         document.querySelector('#imgbox').innerHTML = html;
     })
 }
-datosPortafolio();
 
-function modalPopup() {
-    const openModalButtons = document.querySelectorAll('[data-modal-target]')
-    const closeModalButtons = document.querySelectorAll('[data-close-button]')
-    const overlay = document.getElementById('modal-overlay')
 
-    openModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = document.querySelector(button.dataset.modalTarget)
-            openModal(modal)
-        })
-    })
+// function modalPopup() {
+//     const openModalButtons = document.querySelectorAll('[data-modal-target]')
+//     const closeModalButtons = document.querySelectorAll('[data-close-button]')
+//     const overlay = document.getElementById('modal-overlay')
+
+//     openModalButtons.forEach(button => {
+//         button.addEventListener('click', () => {
+//             const modal = document.querySelector(button.dataset.modalTarget)
+//             openModal(modal)
+//         })
+//     })
+
+//     overlay.addEventListener('click', () => {
+//         const modals =document.querySelectorAll('.modal.active')
+//         modals.forEach(modal => {
+//             closeModal(modal)
+//         })
+//     })
+
+//     closeModalButtons.forEach(button => {
+//         button.addEventListener('click', () => {
+//             const modal = button.closest('.modal')
+//             closeModal(modal)
+//         })
+//     })
+
+//     function openModal(modal) {
+//         if(modal == null) return
+//         modal.classList.add('active')
+//         overlay.classList.add('active')
+//     }
+
+//     function closeModal(modal) {
+//         if(modal == null) return
+//         modal.classList.remove('active')
+//         overlay.classList.remove('active')
+//     }
     
-    overlay.addEventListener('click', () => {
-        const modals =document.querySelectorAll('.modal.active')
-        modals.forEach(modal => {
-            closeModal(modal)
-        })
-    })
+// }
 
-    closeModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = button.closest('.modal')
-            closeModal(modal)
-        })
-    })
+        
 
-    function openModal(modal) {
-        if(modal == null) return
-        modal.classList.add('active')
-        overlay.classList.add('active')
-    }
 
-    function closeModal(modal) {
-        if(modal == null) return
-        modal.classList.remove('active')
-        overlay.classList.remove('active')
-    }
-    
-} 
-modalPopup();
 
 
 function datosSkills() {
@@ -192,6 +195,27 @@ function datosSkills() {
         document.querySelector('#containerCards').innerHTML = html;
     })
 }
+datosPortafolio();
 datosSkills();
+// modalPopup();
 
-//
+
+
+function tabs() {
+    (function (d) {
+        let tabs = Array.prototype.slice.apply(d.querySelectorAll('.tabs__item'));
+        let panels = Array.prototype.slice.apply(d.querySelectorAll('.panels__item'));
+        d.getElementById('tabs').addEventListener('click', e => {
+            if(e.target.classList.contains('tabs__item')){
+               let i = tabs.indexOf(e.target);
+                tabs.map(tab => tab.classList.remove('activetab'));
+                tabs[i].classList.add('activetab');
+                panels.map(panel => panel.classList.remove('activetab'));
+                panels[i].classList.add('activetab');
+            }
+        });
+    })(document);
+    
+}
+
+tabs();

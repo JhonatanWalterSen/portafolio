@@ -571,7 +571,7 @@
 }
 #modal-overlay.active{
     pointer-events: all;
-    opacity: 1;
+    /* opacity: 1; */
     background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-im,
@@ -886,33 +886,54 @@
 } */
 
 
-/* ACERCA DE MI */
-/* mi nombre es jhonatan me gusta el entorno de desarrllo en web
-me concidero una persona autodidacta por lo que
-anterior mente trabaje en MccannWolrd como desarrolladoro para sodimac */
+/* Styles TABS */
+.tabs-container{
+    position: relative;
 
-/* exitoso */
-/* Si, por que anteriormente me propuse aprender herramientas para trabajar y lo lgré 
-ahopra sigo aprendiendo poder seguir aprendiendo ya que la tecnoglogia siempre cambia */
-
-/* trabajar con nostros */
-/* objetivos a larga plazo */
-
-/* punto mas fuerte */
- /* habilidad para hacer las cosas
- concentrado en proyectos */
-
- /* dinero o trabajo */
- /* dinero siempre es imprtante
- pero el trabajo lo es más aun */
-
- /* iria bien en el trabajo */
- /* hablidades expieriencias intereses */
-
-/* jefe anterior */
-/* la lealtad compañerismo liderazgo, energia creatividad trabajo duro */
-
-/* que memmotiva */
-/* me motiva los desafios, los cambios logros y reconocimientos */
-
-/* acerca de los pryectos que metodlogías usan */
+    width: 90%;
+    margin: 2em auto;
+}
+.tabs{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   display: flex;
+   justify-content: center;
+}
+.tabs__item{
+    color: var(--blanco);
+    line-height: 2.5;
+    font-family: var(--Raleway);
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 20px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.tabs__item.activetab{
+    color: var(--color-secundario);
+    font-weight: 600;
+    z-index: 20;
+    border-bottom: 3px solid var(--color-secundario);
+}
+.panels{
+    border:1px solid #ccc;
+    padding: 1em;
+    position: relative;
+    z-index: 10;
+}
+.panels__item{
+    position: absolute;
+    left: -10000px;
+    transition: all .5s;
+}
+.panels__item.activetab{
+    position: relative;
+    left: 0;
+}
+/* https://www.youtube.com/watch?v=jOj6Ouvlq6o */
+13:24
