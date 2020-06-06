@@ -910,6 +910,7 @@
     .details-info {
         margin-left: auto;
         margin-right: auto;
+        text-align: left;
     }
     .desc_name{
         padding-left: 0;
@@ -956,8 +957,52 @@
         margin-left: 180px;
     }
     .details-info {
-        padding: 20px 10px 20px;
+        padding: 20px 30px;
         width: 100%;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+    .filterbox .tabs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .containerAEC{
+        width: 90%;
+    }
+    .blockdate {
+        padding: 20px 20px;
+    }
+    .twodates{
+        flex-direction: column;
+    }
+    .twodates .both:nth-child(1){
+        padding-bottom: 15px;
+    }
+    .btnEnviar{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:420px){
+    .sentence{
+        font-size: 30px;
+    }
+    .btnPort{
+        letter-spacing: 1px;
+        padding: 20px 20px;
+        margin-left: 160px;
+    }
+}
+@media screen and (max-width:320px){
+    .sentence{
+        padding-left: 60px;
+        line-height: 60px;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+    }
+    .btnPort{
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 140px;
+        text-align: center;
     }
 }
