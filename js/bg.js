@@ -43,27 +43,7 @@ function letraCambia() {
         contentType: 'html',
     });
 }
-
 letraCambia();
-
-// function filter() {
-//     $(document).ready(function(){
-//         $('.buttons').click(function(){
-//             var buttonvalue = $(this).attr('data-filter');
-//             if(buttonvalue == 'todo'){
-//                 $('.image-filter').show('1000');
-//             }
-//             else{
-//                 $('.image-filter').not('.'+buttonvalue).hide('200');
-//                 $('.image-filter').filter('.'+buttonvalue).show('200');
-//             }
-//             // $('buttons').addClass('.activefilter');
-//             $(this).addClass('activefilter').siblings().removeClass('activefilter');
-//         });
-//     });
-// }
-
-// filter();
 
 
 function filtergallery() {
@@ -123,51 +103,6 @@ function datosPortafolio() {
 }
 
 
-// function modalPopup() {
-//     const openModalButtons = document.querySelectorAll('[data-modal-target]')
-//     const closeModalButtons = document.querySelectorAll('[data-close-button]')
-//     const overlay = document.getElementById('modal-overlay')
-
-//     openModalButtons.forEach(button => {
-//         button.addEventListener('click', () => {
-//             const modal = document.querySelector(button.dataset.modalTarget)
-//             openModal(modal)
-//         })
-//     })
-
-//     overlay.addEventListener('click', () => {
-//         const modals =document.querySelectorAll('.modal.active')
-//         modals.forEach(modal => {
-//             closeModal(modal)
-//         })
-//     })
-
-//     closeModalButtons.forEach(button => {
-//         button.addEventListener('click', () => {
-//             const modal = button.closest('.modal')
-//             closeModal(modal)
-//         })
-//     })
-
-//     function openModal(modal) {
-//         if(modal == null) return
-//         modal.classList.add('active')
-//         overlay.classList.add('active')
-//     }
-
-//     function closeModal(modal) {
-//         if(modal == null) return
-//         modal.classList.remove('active')
-//         overlay.classList.remove('active')
-//     }
-    
-// }
-
-        
-
-
-
-
 function datosSkills() {
     fetch('servicios.json')
     .then( (respuesta) => {
@@ -197,7 +132,6 @@ function datosSkills() {
 }
 datosPortafolio();
 datosSkills();
-// modalPopup();
 
 
 

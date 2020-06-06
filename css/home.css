@@ -894,7 +894,16 @@
 .titles{
     text-align: center;
 }
-
+.d-none{
+        display: none;
+}
+.change{
+    flex-direction: column-reverse;
+}
+.menuAppear{
+    display: flex !important;
+    flex-direction: column;
+}
 @media screen and (max-width:1024px){
     .container .descgeneral {
         flex-direction: column;
@@ -932,6 +941,18 @@
     }
     .items{
         display: none;
+    }
+    .i-menu{
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        text-align: right;
+    }
+    .i-menu img{
+        width: 40px;
+    }
+    .navbar .container {
+        justify-content: space-between;
     }
 }
 @media screen and (max-width:630px){
@@ -981,6 +1002,7 @@
     .btnEnviar{
         margin-right: 0;
     }
+    
 }
 @media screen and (max-width:420px){
     .sentence{

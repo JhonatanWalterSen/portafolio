@@ -1,3 +1,29 @@
+function menuMobile() {
+    let change = 'change';
+    let none = 'd-none';
+    let appear = 'menuAppear';
+    const menuOn = document.querySelector('.i-menu');
+    const brand = document.querySelector('.brand');
+    const menuEstru = document.querySelector('.navbar .container');
+    const items = document.querySelector('.items');
+        menuOn.addEventListener('click', () => {
+            if (brand.classList.contains(none)) {
+                brand.classList.remove(none)
+                items.classList.remove(appear)
+            } else{
+                brand.classList.add(none)
+                items.classList.add(appear)
+            }
+            if (menuEstru.classList.contains(change)) {
+                menuEstru.classList.remove(change)
+            } else {
+                menuEstru.classList.add(change)
+            }
+    }) 
+}
+menuMobile();
+
+
 // function iconmenu(){
 //     let active = 'activeMenu';
 //     let complete ='completeHeader';
@@ -43,57 +69,3 @@
 //     }
 //     });
 // }
-
-// iconmenu();
-
-// optro
-
-function newPop() {
-    // document.addEventListener("DOMContentLoaded", function(event) {
-        // let variable = 'img-f';
-        var obtenerImagen = document.querySelector('.img-f');
-        console.log(obtenerImagen);
-    // });
-}
-newPop();
-
-function modalPopup() {
-    const openModalButtons = document.querySelectorAll('[data-modal-target]')
-    const closeModalButtons = document.querySelectorAll('[data-close-button]')
-    const overlay = document.getElementById('modal-overlay')
-
-    openModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = document.querySelector(button.dataset.modalTarget)
-            openModal(modal)
-        })
-    })
-
-    overlay.addEventListener('click', () => {
-        const modals =document.querySelectorAll('.modal.active')
-        modals.forEach(modal => {
-            closeModal(modal)
-        })
-    })
-
-    closeModalButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = button.closest('.modal')
-            closeModal(modal)
-        })
-    })
-
-    function openModal(modal) {
-        if(modal == null) return
-        modal.classList.add('active')
-        overlay.classList.add('active')
-    }
-
-    function closeModal(modal) {
-        if(modal == null) return
-        modal.classList.remove('active')
-        overlay.classList.remove('active')
-    }
-    
-}
-modalPopup();
