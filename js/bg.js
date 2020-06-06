@@ -130,7 +130,7 @@ function datosSkills() {
         document.querySelector('#containerCards').innerHTML = html;
     })
 }
-datosPortafolio();
+// datosPortafolio();
 datosSkills();
 
 
