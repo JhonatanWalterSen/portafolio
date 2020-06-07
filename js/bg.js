@@ -48,28 +48,6 @@ function letraCambia() {
 letraCambia();
 
 
-function filtergallery() {
-    
-    $(document).ready(function(){
-        $(".buttons").click(function(){
-            var value = $(this).attr("data-filter");
-            if (value == "todo") {
-                $(".filter").show("1000");
-            }
-            else{
-                $(".filter").not("."+value).hide("1000");
-                $(".filter").filter("."+value).show("1000");
-            }
-            // add active class
-            $("ul .buttons").click(function() {
-                $(this).addClass("activefilter").siblings().removeClass();
-            });
-        });
-    });
-}
-filtergallery();
-
-
 function datosPortafolio() {
     fetch('portafolio.json')
     .then( (respuesta) => {
@@ -153,5 +131,19 @@ function tabs() {
     })(document);
     
 }
-
 tabs();
+function links() {
+    let link = document.querySelectorAll('.linksTo');
+    let linkA = Array.prototype.slice.apply(document.querySelectorAll('.linksTo'));
+    console.log(link)
+    console.log(linkA)
+    document.getElementById('links').addEventListener('click', e => {
+        if (e.target.classList.contains('linksTo')) {
+            let i = linkA.indexOf(e.target);
+            // console.log(i)
+            linkA.map(lin => lin.classList.remove('link-active'));
+            linkA[i].classList.add('link-active');
+        }
+    })
+}
+links();
