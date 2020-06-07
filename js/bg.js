@@ -10,14 +10,16 @@
 
 function scrollHeader(){
     const nav = document.querySelector('.navbar');
+    const menulate = document.querySelector('.menuAppear');
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
         // console.log(scrolled);
         if(scrolled >= 50){
-            nav.style.background="#1D3357";
-            // nav.style.border="0";
+            nav.style.background="rgba(29, 51, 87, 0.7)";
+           
         }else{
             nav.style.background="transparent";
+           
         }
     });
 }
