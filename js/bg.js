@@ -137,38 +137,36 @@ tabs();
 function followheader() {
     let header = Array.prototype.slice.apply(document.getElementsByTagName('section'));
     let linkAs = Array.prototype.slice.apply(document.querySelectorAll('.linksTo'));
-
-    for (let i = 0; i < header.length; i++) {
-        
+    for (let i = 0; i < header.length; i++) {   
          console.log(header[i].offsetTop);
         //  console.log(sections)
          document.addEventListener('scroll', e =>{
             const scrolled = window.scrollY;
-            if (scrolled == 0) {
+            if (scrolled >= 0) {
                 linkAs.map(lin => lin.classList.remove('link-active'));
                 linkAs[0].classList.add('link-active');
             }else {
                 linkAs[0].classList.remove('link-active');
             }  
-            if (scrolled >= 736) {
+            if (scrolled >= header[1].offsetTop) {
                 linkAs.map(lin => lin.classList.remove('link-active'));
                 linkAs[1].classList.add('link-active');
             }else {
                 linkAs[1].classList.remove('link-active');
             }
-            if (scrolled >= 1867) {
+            if (scrolled >= header[2].offsetTop) {
                 linkAs.map(lin => lin.classList.remove('link-active'));
                 linkAs[2].classList.add('link-active');
             }else {
                 linkAs[2].classList.remove('link-active');
             }
-            if (scrolled >= 2006) {
+            if (scrolled >= header[3].offsetTop) {
                 linkAs.map(lin => lin.classList.remove('link-active'));
                 linkAs[3].classList.add('link-active');
             }else {
                 linkAs[3].classList.remove('link-active');
             }
-            if (scrolled >= 3406) {
+            if (scrolled >= header[4].offsetTop) {
                 linkAs.map(lin => lin.classList.remove('link-active'));
                 linkAs[4].classList.add('link-active');
             }else {

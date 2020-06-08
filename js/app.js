@@ -27,3 +27,12 @@ function menuMobile() {
 }
 menuMobile();
 
+function barra() {
+    let progress = document.getElementById('progressbar');
+    let totalhe = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function (){
+        let progressHe = (window.pageYOffset / totalhe) * 100;
+        progress.style.height = progressHe + "%";
+    }
+}
+barra();
