@@ -10,7 +10,7 @@
 
 function scrollHeader(){
     const nav = document.querySelector('.navbar');
-    const menulate = document.querySelector('.menuAppear');
+    // const menulate = document.querySelector('.menuAppear');
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
         // console.log(scrolled);
@@ -132,11 +132,59 @@ function tabs() {
     
 }
 tabs();
+
+
+function followheader() {
+    let header = Array.prototype.slice.apply(document.getElementsByTagName('section'));
+    let linkAs = Array.prototype.slice.apply(document.querySelectorAll('.linksTo'));
+
+    for (let i = 0; i < header.length; i++) {
+        
+         console.log(header[i].offsetTop);
+        //  console.log(sections)
+         document.addEventListener('scroll', e =>{
+            const scrolled = window.scrollY;
+            if (scrolled == 0) {
+                linkAs.map(lin => lin.classList.remove('link-active'));
+                linkAs[0].classList.add('link-active');
+            }else {
+                linkAs[0].classList.remove('link-active');
+            }  
+            if (scrolled >= 736) {
+                linkAs.map(lin => lin.classList.remove('link-active'));
+                linkAs[1].classList.add('link-active');
+            }else {
+                linkAs[1].classList.remove('link-active');
+            }
+            if (scrolled >= 1867) {
+                linkAs.map(lin => lin.classList.remove('link-active'));
+                linkAs[2].classList.add('link-active');
+            }else {
+                linkAs[2].classList.remove('link-active');
+            }
+            if (scrolled >= 2006) {
+                linkAs.map(lin => lin.classList.remove('link-active'));
+                linkAs[3].classList.add('link-active');
+            }else {
+                linkAs[3].classList.remove('link-active');
+            }
+            if (scrolled >= 3406) {
+                linkAs.map(lin => lin.classList.remove('link-active'));
+                linkAs[4].classList.add('link-active');
+            }else {
+                linkAs[4].classList.remove('link-active');
+            }
+         })
+    }
+   
+    
+}
+followheader();
 function links() {
-    let link = document.querySelectorAll('.linksTo');
+    // let link = document.querySelectorAll('.linksTo');
     let linkA = Array.prototype.slice.apply(document.querySelectorAll('.linksTo'));
-    console.log(link)
-    console.log(linkA)
+    // console.log(typeof link)
+    // console.log(typeof linkA)
     document.getElementById('links').addEventListener('click', e => {
         if (e.target.classList.contains('linksTo')) {
             let i = linkA.indexOf(e.target);
