@@ -2,16 +2,16 @@
     "portafolio" : [
         {
             "categoria":"web",
-            "imagen": "Web-Biblioteca.png",
-            "titulo": "Biblioteca Virtual",
+            "imagen": "Web-CR7.png",
+            "titulo": "Simple Page CR7",
             "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
             "tipo": "Repositorio",
             "href": "#"
         },
         {
             "categoria":"web",
-            "imagen": "Web-BlogViajes.png",
-            "titulo": "Blog Viajes",
+            "imagen": "hp.png",
+            "titulo": "Libros Online",
             "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
             "tipo": "Repositorio",
             "href": "#"

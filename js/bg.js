@@ -57,28 +57,24 @@ function datosPortafolio() {
         let html='';
         datos.portafolio.forEach(portafolio => {
             html += `
-            <div class="box filter ${portafolio.categoria}">
-                <img data-modal-target="#modal" class="img-f" src="img/${portafolio.imagen}">
-            </div>
-            <div class="modal" id="modal">
-                <div class="modal-header">
-                    <div class="title-modal">${portafolio.titulo}</div>
-                    <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-im">
-                        <img src="img/${portafolio.imagen}">
-                    </div>
-                    <div class="modal-desc">
-                        <p class="desc-info">${portafolio.descripcion}</p>
-                        <a href="${portafolio.href}" class="desc-btns">${portafolio.tipo}</a>
-                    </div>
-                </div>
-            </div>
-            <div id="modal-overlay"></div>
+                        <div class="contain__portafolio">
+                                <div class="panels__photo-Desc">
+                                <img src="img/${portafolio.imagen}" alt="">
+                            </div>
+                            <div class="panels__photo-Desc boxfilter">
+                                <div class="paneldesc">
+                                    <p class="ptitle">${portafolio.titulo}</p>
+                                    <p class="pdesc">${portafolio.descripcion}</p>
+                                    <div class="twoBtns">
+                                        <a class="btnstyle" href="#"><span>Ver web</span></a>
+                                        <a class="btnstyle" href="#"><span>Repositorio</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             `;
         });
-        document.querySelector('#imgbox').innerHTML = html;
+        document.querySelector('#webPages').innerHTML = html;
     })
 }
 
@@ -110,7 +106,7 @@ function datosSkills() {
         document.querySelector('#containerCards').innerHTML = html;
     })
 }
-// datosPortafolio();
+datosPortafolio();
 datosSkills();
 
 
