@@ -1,26 +1,51 @@
 {
     "portafolio" : [
         {
-            "categoria":"web",
-            "imagen": "Web-CR7.png",
+            "imagen": "webs/Web-CR7.png",
             "titulo": "Simple Page CR7",
-            "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
+            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!",
             "tipo": "Repositorio",
             "href": "#"
         },
         {
-            "categoria":"web",
-            "imagen": "hp.png",
+            "imagen": "webs/Web-HP.png",
             "titulo": "Libros Online",
-            "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
+            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
             "tipo": "Repositorio",
             "href": "#"
         },
         {
-            "categoria":"web",
-            "imagen": "Web-Mailing.png",
+            "imagen": "webs/Web-Mailing.png",
             "titulo": "Mailing",
-            "descripcion": "Pagina elaborada con Flex-Box, Utilizando como Carrusel Swipper",
+            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
+            "tipo": "Repositorio",
+            "href": "#"
+        },
+        {
+            "imagen": "webs/Web-devflix.png",
+            "titulo": "Similar Netflix",
+            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
+            "tipo": "Repositorio",
+            "href": "#"
+        },
+        {
+            "imagen": "webs/Web-AdminFlexBox.png",
+            "titulo": "Admin con Flex",
+            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
+            "tipo": "Repositorio",
+            "href": "#"
+        },
+        {
+            "imagen": "webs/Web-RecetasGrid.png",
+            "titulo": "Recetas con Grid",
+            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
+            "tipo": "Repositorio",
+            "href": "#"
+        },
+        {
+            "imagen": "webs/Web-ViajesGrid.png",
+            "titulo": "Viajes con Grid",
+            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
             "tipo": "Repositorio",
             "href": "#"
         }
