@@ -54,7 +54,9 @@ function datosPortafolio() {
         return respuesta.json();
     })
     .then((datos) =>{
+        console.log(datos);
         let html='';
+        // console.log(datos.portafolioMobile)
         datos.portafolio.forEach(portafolio => {
             html += `
                         <div class="contain__portafolio">
@@ -74,6 +76,8 @@ function datosPortafolio() {
                         </div>
             `;
         });
+        console.log(datos.portafolio[0].titulo);
+        
         document.querySelector('#webPages').innerHTML = html;
     })
 }

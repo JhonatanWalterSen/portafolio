@@ -49,6 +49,12 @@
             "tipo": "Repositorio",
             "href": "#"
         }
+    ],
+    "portafolioMobile" :[
+        {
+            "imagenCode": "imagen codigo de barra para descargar",
+            "Nombre": "Pokedex App",
+            "Tipo": "Fluuter o Android"
+        }
     ]
-    
 } 
