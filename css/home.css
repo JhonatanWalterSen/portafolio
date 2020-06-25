@@ -835,6 +835,7 @@ html{
     color: var(--color-secundario);
     font-weight: 600;
     z-index: 20;
+    
     border-bottom: 3px solid var(--color-secundario);
 }
 .panels{
@@ -844,11 +845,13 @@ html{
 .panels__item{
     position: absolute;
     left: -10000px;
+    display: none;
     transition: all .01s ease-in-out;
 }
 .panels__item.activetab{
     position: relative;
     left: 0;
+    display: block;
 }
 /* contenido de portafolio */
 .contain__portafolio{
@@ -1078,6 +1081,13 @@ html{
         flex: 1;
     }
 }
+@media screen and (max-width:768px){
+    .pdesc{
+        padding-right: 20px;
+        padding-left: 20px;
+    } 
+}
+
 @media screen and (max-width:767px){
     .cardinfo {
         flex: 1 0 100%;
@@ -1106,6 +1116,14 @@ html{
     }
     .contain__portafolio:nth-child(even){
         flex-direction: column;
+    }
+    .btnstyle::before,
+    .btnstyle::after{
+        display: none;
+    }
+    .btnstyle{
+        color: var(--color-secundario);
+        border: 1.5px solid var(--color-secundario);
     }
 }
 @media screen and (max-width:630px){
