@@ -1029,6 +1029,7 @@ html{
     0%,100%{filter: hue-rotate(#ffce00);}
     50%{filter: hue-rotate(#1D3357);}
 }
+
 #progressbar::before{
    content: '';
    position: absolute;
@@ -1049,6 +1050,14 @@ html{
     background: linear-gradient(to top, #ffce00,#ffce00);
     filter: blur(2px); 
  }
+ 
+.yono{
+    border-radius: 50%;
+    background-color:#ffce00;
+}
+.yono:hover{
+    background-color: var(--color-primario);
+}
 @media screen and (max-width:1024px){
     .container .descgeneral {
         flex-direction: column;
