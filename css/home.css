@@ -1073,6 +1073,9 @@ html{
     padding: 5px;
     margin-top: 15px;
 }
+.imagen-stop{
+    width: 100%;
+}
 @media screen and (max-width:1024px){
     .container .descgeneral {
         flex-direction: column;

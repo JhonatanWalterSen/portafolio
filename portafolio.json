@@ -12,35 +12,35 @@
             "titulo": "Simple Page CR7",
             "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!",
             "tipo": "Repositorio",
-            "href": "#"
+            "href": "https://jhonatanwaltersen.github.io/betaCr7/"
         },
         {
             "imagen": "webs/Web-HP.png",
             "titulo": "Libros Online",
             "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
             "tipo": "Repositorio",
-            "href": "#"
+            "href": "https://jhonatanwaltersen.github.io/Biblioteca-virtual/"
         },
         {
             "imagen": "webs/Web-Mailing.png",
             "titulo": "Mailing",
             "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
             "tipo": "Repositorio",
-            "href": "#"
+            "href": "https://jhonatanwaltersen.github.io/mailing-ropa/"
         },
         {
             "imagen": "webs/Web-devflix.png",
             "titulo": "Similar Netflix",
             "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
             "tipo": "Repositorio",
-            "href": "#"
+            "href": "https://jhonatanwaltersen.github.io/Similar-Netflix/"
         },
         {
             "imagen": "webs/Web-AdminFlexBox.png",
-            "titulo": "Admin con Flex",
-            "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
+            "titulo": "Admin con Flex ",
+            "descripcion": "No Responsive  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit rerum praesentium modi illum repellat id alias temporibus laboriosam numquam eos minus distinctio dolor commodi cumque dicta labore, cupiditate expedita!r",
             "tipo": "Repositorio",
-            "href": "#"
+            "href": "https://jhonatanwaltersen.github.io/Admin-Flex/"
         },
         {
             "imagen": "webs/Web-RecetasGrid.png",
