@@ -901,8 +901,8 @@ html{
 }
 .btnstyle{
     position: relative;
-    padding: 5px 15px;
-    border: 1.5px solid var(--blanco);
+    padding: 5px 25px;
+    border: 2px solid var(--blanco);
     color: var(--blanco);
     text-transform: uppercase;
     text-decoration: none;
@@ -936,7 +936,7 @@ html{
 }
 .btnstyle:hover{
     color: var(--color-secundario);
-    border: 1.5px solid var(--color-secundario);
+    border: 2px solid var(--color-secundario);
 }
 .btnstyle:hover::before{
     transform: scaleY(0);

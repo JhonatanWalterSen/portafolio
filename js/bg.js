@@ -1,25 +1,12 @@
-// function backgroundColors(){
-//     for (let i = 0; i <= 2000; i++) {
-//         const div = document.createElement("div");
-//         div.classList.add("boxSection"); 
-//         let gs = document.querySelector('.generalSection');
-//         gs.appendChild(div);
-//     }
-// }
-// backgroundColors();
-
 function scrollHeader(){
     const nav = document.querySelector('.navbar');
-    // const menulate = document.querySelector('.menuAppear');
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
-        // console.log(scrolled);
         if(scrolled >= 50){
             nav.style.background="rgba(29, 51, 87, 0.7)";
            
         }else{
             nav.style.background="transparent";
-           
         }
     });
 }
@@ -68,16 +55,14 @@ function datosPortafolio() {
                                     <p class="ptitle">${portafolio.titulo}</p>
                                     <p class="pdesc">${portafolio.descripcion}</p>
                                     <div class="twoBtns">
-                                        <a class="btnstyle" href="#"><span>Ver web</span></a>
-                                        <a class="btnstyle" href="#"><span>Repositorio</span></a>
+                                        <a class="btnstyle" href="${portafolio.href}" target="_blank" ><span>Ver web</span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
             `;
         });
-        console.log(datos.portafolio[0].titulo);
-        
+        // console.log(datos.portafolio[0].titulo);       
         document.querySelector('#webPages').innerHTML = html;
     })
 }
@@ -133,7 +118,7 @@ function tabs() {
 }
 tabs();
 
-
+// Seguir el Encabezado
 // function followheader() {
 //     let header = Array.prototype.slice.apply(document.getElementsByTagName('section'));
 //     let linkAs = Array.prototype.slice.apply(document.querySelectorAll('.linksTo'));
@@ -173,11 +158,12 @@ tabs();
 //                 linkAs[4].classList.remove('link-active');
 //             }
 //          })
-//     }
-   
-    
+//     }   
 // }
 // followheader();
+
+
+
 function linksHeaderCss() {
     // let link = document.querySelectorAll('.linksTo');
     let linkA = Array.prototype.slice.apply(document.querySelectorAll('.linksTo'));
