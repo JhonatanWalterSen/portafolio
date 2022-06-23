@@ -2,21 +2,30 @@
     "servicios" : [
         {
             "id" : 1,
-            "img" : "contact.png",
-            "titulo" : "Trabajo en Equipo",
-            "descripcion" : "Capacidad de llevarme bien con los compañeros y colaborano conjuntamente se consigue un trabajo eficiente."
+            "img" : "icon-front.png",
+            "titulo" : "Front end",
+            "descripcion" : "Javascript/Github",
+            "descripcion2" : "Booststrap/Gulp",
+            "descripcion3" : "CSS3/SASS/LESS",
+            "descripcion4" : "HTML5"
         },
         {
             "id" : 2,
-            "img" : "swap.png",
-            "titulo" : "Adaptar a Cambios",
-            "descripcion" : "Salir de la zona de confort, adáptandose a los cambios y nuevos entornos"
+            "img" : "icon-skill.png",
+            "titulo" : "Habilidades Blandas",
+            "descripcion" : "Trabajo en equipo",
+            "descripcion2" : "Planificación",
+            "descripcion3" : "Organización",
+            "descripcion4" : "Respeto"
         },
         {
             "id" : 3,
-            "img" : "head.png",
-            "titulo" : "Resolver conflictos",
-            "descripcion" : "Encontrar soluciones rápidas y efectivas a los problemas y conflictos interpersonales."
+            "img" : "icon-others.png",
+            "titulo" : "Otros",
+            "descripcion" : "FileZilla",
+            "descripcion2" : "PLANIFICACIÓN",
+            "descripcion3" : "ORGANIZACIÓN",
+            "descripcion4" : "RESPETO"
         }
     ]
 }

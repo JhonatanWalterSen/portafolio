@@ -419,73 +419,50 @@ box-shadow: 0px 25px 52px -24px rgba(0,0,0,0.27);
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
+    font-family: var(--Raleway);
 }
 .containerCards .card{
     position: relative;
-    flex:  0 0 calc(33% - 1rem);
+    width: 350px;
 }
 .card .face{
     transition: 0.5s;
 }
 
-.card .face.face1{
+/* .card .face.face1{
     background-color: var(--color-primario);
-    z-index: 1;
-    transform: translateY(100px);
-}
-.card:hover .face.face1{
-    transform: translateY(0);
-    height: auto;
-    background-color: var(--color-secundario);
-    z-index: 3;
-}
-.content{
+
+} */
+
+.content img{
+    border-radius: 50%;
+    background-color: var(--color-celeste);
     padding: 15px;
-    box-shadow: 0px 0px 5px white;
 }
 .content p{
     letter-spacing: 0.5px;
 }
-.containerCards .card:hover .content{
-    padding: 0;
-}
-.containerCards .card .face.face1 .content img{
-    opacity: 0.7;
-    transition: 2s ;
-}
-.containerCards .card:hover .face.face1 .content img{
-    opacity: 1;
-    transition: 1s ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.containerCards .card:hover .titleSkill{
-    color: var(--color-primario);
-}
+
 .containerCards .card .face.face1 .content img{
     max-width: 100px;
 }
 .card .face.face2{
     position: relative;
-    background-color: #fff;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(255,255,255, .5);
-    transform: translateY(-100px);
-    z-index: -1;
 }
 .card:hover .face.face2{
     transform: translateY(0);
     z-index: 0;
 }
 .titleSkill{
-    padding:15px;
-    color: var(--blanco);
+    color: var(--color-primario);
     text-align: center;
     font-size: 1.3em;
 }
-
+.skills .titleskill .myport{
+    color: black;
+}
 /* section Filter */
 
 

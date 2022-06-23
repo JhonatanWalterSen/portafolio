@@ -80,12 +80,15 @@ function datosSkills() {
                         <div class="face face1">
                             <div class="content">
                                 <img src="img/${servicios.img}">
-                                <h3 class="titleSkill">${servicios.titulo}</h3>
                             </div>
                         </div>
                         <div class="face face2">
                             <div class="content">
+                                <h3 class="titleSkill">${servicios.titulo}</h3>
                                 <p>${servicios.descripcion}</p>
+                                <p>${servicios.descripcion2}</p>
+                                <p>${servicios.descripcion3}</p>
+                                <p>${servicios.descripcion4}</p>
                             </div>
                         </div>
                     </div>
