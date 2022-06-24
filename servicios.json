@@ -14,18 +14,18 @@
             "img" : "icon-skill.png",
             "titulo" : "Habilidades Blandas",
             "descripcion" : "Trabajo en equipo",
-            "descripcion2" : "Planificación",
-            "descripcion3" : "Organización",
+            "descripcion2" : "Organización",
+            "descripcion3" : "Planificación",
             "descripcion4" : "Respeto"
         },
         {
             "id" : 3,
             "img" : "icon-others.png",
             "titulo" : "Otros",
-            "descripcion" : "FileZilla",
-            "descripcion2" : "PLANIFICACIÓN",
-            "descripcion3" : "ORGANIZACIÓN",
-            "descripcion4" : "RESPETO"
+            "descripcion" : "Adobe Illustrator",
+            "descripcion2" : "Adobe XD/Figma",
+            "descripcion3" : "FileZilla",
+            "descripcion4" : "Awscli"
         }
     ]
 }

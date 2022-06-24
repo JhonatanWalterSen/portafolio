@@ -1,15 +1,17 @@
-/* function scrollHeader(){
-    const nav = document.querySelector('.navbar');
+function scrollHeader(){
+    const up = document.querySelector('.up');
     window.addEventListener('scroll', () => {
         const scrolled = window.scrollY;
-        if(scrolled >= 50){
-            nav.style.background="#072145";
+        if(scrolled >= 350){
+            up.style.display ="block";
+            up.style.background="#ffce00";
         }else{
-            nav.style.background="transparent";
+            up.style.display ="none";
+            up.style.background="transparent";
         }
     });
 }
-scrollHeader(); */
+scrollHeader();
 
 function letraCambia() {
     const typed = new Typed('.typed',{
@@ -46,19 +48,15 @@ function datosPortafolio() {
         datos.portafolio.forEach(portafolio => {
             html += `
                         <div class="contain__portafolio">
-                                <div class="panels__photo-Desc">
-                                <img src="img/${portafolio.imagen}" alt="">
-                            </div>
-                            <div class="panels__photo-Desc boxfilter">
-                                <div class="paneldesc">
+                            <div class="panels__photo-Desc">
+                                <a href="${portafolio.href}" target="_blank" alt="${portafolio.titulo}"><img src="img/${portafolio.imagen}"></a>
+                                <div class="detalles__proyecto">
                                     <p class="ptitle">${portafolio.titulo}</p>
                                     <p class="pdesc">${portafolio.descripcion}</p>
-                                    <div class="twoBtns">
-                                        <a class="btnstyle" href="${portafolio.href}" target="_blank" ><span>Ver web</span></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+                
             `;
         });
         // console.log(datos.portafolio[0].titulo);       
