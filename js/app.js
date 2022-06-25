@@ -98,15 +98,17 @@ function menuMobile() {
     const menuEstru = document.querySelector('.navbar .container');
     const items = document.querySelector('.items');
     let imenu = document.querySelector('.menu-tablet-mobile');
+/* 
+    let menuderecha = document.querySelector('.navbar .container'); */
+
         menuOn.addEventListener('click', () => {
             if (brand.classList.contains(none)) {
                 brand.classList.remove(none)
-                items.classList.remove(appear)
-                imenu.src="img/icon2-mobile.png";
+                items.classList.remove(appear)/* 
+                menuderecha.classList.toggle('flex-end') */
             } else{
                 brand.classList.add(none)
                 items.classList.add(appear)
-                imenu.src="img/icon-x.png";
             }
             if (menuEstru.classList.contains(change)) {
                 menuEstru.classList.remove(change)
@@ -127,3 +129,10 @@ function barra() {
     }
 }
 barra();
+
+
+$(document).ready(function(){
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+      $(this).toggleClass('open');
+    });
+  });
