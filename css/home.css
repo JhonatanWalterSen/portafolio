@@ -368,7 +368,7 @@ html,body{
 
 .downloadCv a:hover{
     background-color: var(--color-secundario);
-    color: var(--blanco);
+    color: #000;
     box-shadow: 0 0 25px var(--color-secundario);
     transition-delay: 0.5s ;
 }
@@ -684,37 +684,40 @@ html,body{
 .contact{
     width: 100%;
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--color-primario);
 }
 .bgworld{
     background-image: url(../img/World.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100%;
+    width: 1440px;
+    margin: auto;
 }
 .bgworld .container{
     text-align: center;
 }
-.bgworld .container h3::before{
-    content: " ";
-    display: block;
-    background: #f3c26b;
+
+.bgworld::before{
+    content: '<section class="Contacto">';
     position: absolute;
-    width: 70px;
-    height: 2px;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    text-align: center;
-    bottom: -30px;
-    left: 0;
-    right: 0;
-    border-radius: 5px;
+    font-family: var(--coder-font);
+    font-size: 40px;
+    color:#ffce00;
 }
+
+.bgworld::after{
+    content: '</section>';
+    position: absolute;
+    font-family: var(--coder-font);
+    font-size: 40px;
+    color:#ffce00;
+}
+
 .containerAEC{
-    width: 80%;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -751,14 +754,12 @@ html,body{
     text-align: left;
     font-size: 13px;
 }
-.con{
-    padding-bottom: 30px;
-}
+
 .blockdate{
     width: 100%;
-    background: #343436;
-    border: 1px solid #2b2b2d;
+    background: rgb(0 0 0 / 40%);
     padding: 50px 30px;
+    border-radius: 10px;
 }
 .twodates{
     display: flex;
@@ -766,17 +767,21 @@ html,body{
     padding-bottom: 15px;
 }
 .blockdate input, textarea{
-    background: #2f2f31;
-    border: 1px solid #29292d;
-    color: #f9f9f9;
+    background: transparent;
+    border-bottom: 2px solid #ffffff;
     width: 100%;
-    outline: 0;
+    outline: none;
     padding: 13px 20px;
-    resize: none;
     color: var(--blanco);
     font-size: 14px;
-    font-weight: 400;
-    font-family: var(--Open);
+    font-family: var(--Raleway);
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+.blockdate input::placeholder,
+textarea::placeholder{
+    color: #fff;
 }
 .both{
     flex: 0 0 calc(50% - 5px);
@@ -796,25 +801,20 @@ html,body{
 }
 .btnEnviar{
     text-decoration: none;
-    display: block;
-    cursor: pointer;
-    background: #f3c26b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-secundario);
     border: 2px solid #f3c26b;
     -webkit-transition: all .4s;
-    color: #fff;
+    color: #000;
     font-family: var(--Raleway);
-    position: relative;
-    z-index: 2;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
-    padding: 0;
-    line-height: 44px;
-    min-width: 170px;
     height: 46px;
     letter-spacing: 2px;
-    margin-right: 15px;
     border-radius: 3px;
 }
 .btnEnviar:hover{
@@ -921,11 +921,14 @@ html,body{
 }
 .panels__photo-Desc{
     width: 400px;
-    background: #192532;
+    background: rgb(0 0 0 / 40%);
     box-shadow: 0 0.125rem 1.25rem rgb(0 0 0 / 8%);
+    transition: 1s all;
 }
 .panels__photo-Desc:hover{
+    background:  #192532;
     transform: scale(1.09);
+    transition: 1s all;
 }
 .panels__photo-Desc img{
     width: 100%;
@@ -1149,25 +1152,64 @@ html,body{
 }
 
 @media screen and (max-width:1500px){
-    .navbar .container{
+    .navbar .container,
+    .container,
+    .tabs-container,
+    .mainfilter .filterbox,
+    .bgworld{
         width: 90%;
     }
-    .container{
-        width: 90%;
+    .desc_info{
+        font-size: 14px;
     }
-    .tabs-container {
-        width: 90%;
-    }
-    .mainfilter .filterbox {
-        width: 90%;
+    .containerAEC {
+        width: 100%;
     }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1100px){
+    .desc .container::before,
+    .desc .container::after,
+    .resumen::before,
+    .resumen::after,
+    .proyectos::before,
+    .proyectos::after,
+    .bgworld::before,
+    .bgworld::after {
+        font-size: 35px;
+    }
+    .mitadSecc::before {
+        font-size: 30px;
+    }
+    .descgeneral .mitad:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mitadSecc::before {
+        left: 25px;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:1025px){
+    .mitad img {
+        width: 30%;
+    }
     .container .descgeneral {
         flex-direction: column;
         text-align: center;
     }
+
+    .mitad2 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .details-info {
+        text-align: center;
+    }
+
     .descgeneral .mitad:nth-child(1){
         padding-bottom: 20px;
     }
@@ -1175,11 +1217,7 @@ html,body{
         flex: 0 0 calc(50% - 1rem);
         margin: 0 5px;
     }
-    .details-info {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
+    
     .desc_name{
         padding-left: 0;
     }
@@ -1187,20 +1225,18 @@ html,body{
     #progressbar{
         display: none;
     }
-}
-@media screen and (max-width:911px){
-    .items{
-        flex: 1;
+    .panels {
+        padding: 0;
     }
 }
-@media screen and (max-width:768px){
-    .pdesc{
-        padding-right: 20px;
-        padding-left: 20px;
-    } 
+@media screen and (max-width:911px){
+    .mywork {
+        padding-top: 40px;
+    }
 }
 
-@media screen and (max-width:767px){
+
+@media screen and (max-width:769px){
     .cardinfo {
         flex: 1 0 100%;
         padding: 15px 10px;
@@ -1221,14 +1257,11 @@ html,body{
     .navbar .container {
         justify-content: space-between;
     }
-    .contain__portafolio{
-        display: flex;
-        flex-direction: column;
-        
+    .containerCards .card {
+        margin-bottom: 20px;
     }
-    .contain__portafolio:nth-child(even){
-        flex-direction: column;
-    }
+    
+
     .btnstyle::before,
     .btnstyle::after{
         display: none;
@@ -1240,8 +1273,7 @@ html,body{
 }
 @media screen and (max-width:630px){
     .containerCards .card {
-        flex: 0 0 100%;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .tabs__item {
         font-size: 12px;
@@ -1250,10 +1282,42 @@ html,body{
     .card__item {
         flex: 0 0 calc(100% - 1rem);
     }
+    .ondas{
+        height: 100px !important;
+    }
+    .twodates {
+        flex-direction: column;
+    }
+
+    .desc .container::before, 
+    .desc .container::after, 
+    .resumen::before, 
+    .resumen::after, 
+    .proyectos::before, 
+    .proyectos::after, 
+    .bgworld::before, 
+    .bgworld::after {
+        font-size: 30px;
+    }
+    .myport {
+        font-size: 24px;
+    }
+    .mywork {
+        font-size: 18px;
+    }
+
+    .desc {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 @media screen and (max-width:500px){
     .sentence{
         font-size: 40px;
+    }
+
+    .ondas {
+        height: 60px !important;
     }
     .btnPort{
         font-size: 20px;
@@ -1274,7 +1338,7 @@ html,body{
         width: 90%;
     }
     .blockdate {
-        padding: 20px 20px;
+        padding: 35px 20px;
     }
     .twodates{
         flex-direction: column;
@@ -1285,8 +1349,11 @@ html,body{
     .btnEnviar{
         margin-right: 0;
     }
-    
+    .panels__photo-Desc {
+        width: 100%;
+    }
 }
+
 @media screen and (max-width:420px){
     .sentence{
         font-size: 30px;
@@ -1295,6 +1362,15 @@ html,body{
         letter-spacing: 1px;
         padding: 20px 20px;
         margin-left: 160px;
+    }
+    .containerCards .card {
+        width: 100%;
+    }
+    .up {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
     }
 }
 @media screen and (max-width:320px){
