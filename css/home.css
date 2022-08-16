@@ -3,7 +3,6 @@
     --color-primario: #072145;
     --color-celeste: #004481;
     --color-secundario: #f8cd50;
-    
     --blanco:#fff;
     --rojo-claro: #e84855;
     --none:none;
@@ -16,9 +15,6 @@
     --coder-font: 'Reenie Beanie';
 }
 
-* {
-    /* outline: red 1px solid; */
-}
 html,body{
     scroll-behavior: smooth;
 }
@@ -33,7 +29,7 @@ html,body{
 }
 .navbar{
     position: fixed;
-    top: 0; 
+    top: 0;
     right: 0;
     left: 0;
     z-index: var(--x100);
@@ -205,7 +201,6 @@ html,body{
     height: 2px;
     background: linear-gradient(to left, #0c002b, #e84855);
     animation: animate3 2s linear infinite;
-    
 }
 @keyframes animate3{
     0%{ transform:translateX(100%);}
@@ -507,7 +502,6 @@ html,body{
     position: relative;
     padding-top: 20px;
     padding-bottom: 70px;
-    
 }
 .mainfilter .filterbox{
     text-align: center;
@@ -654,7 +648,7 @@ html,body{
 }
 .modal-im img{
     max-width: 50%;
-}                           
+}
 #modal-overlay{
     position: fixed;
     top: 0;
@@ -893,7 +887,6 @@ textarea::placeholder{
     color: var(--color-secundario);
     font-weight: 600;
     z-index: 20;
-    
     border-bottom: 3px solid var(--color-secundario);
 }
 .panels{
@@ -1082,7 +1075,7 @@ textarea::placeholder{
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, #ffce00,#ffce00);
-    filter: blur(2px); 
+    filter: blur(2px);
 }
 #progressbar::after{
     content: '';
@@ -1092,7 +1085,7 @@ textarea::placeholder{
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, #ffce00,#ffce00);
-    filter: blur(2px); 
+    filter: blur(2px);
 }
 
 .yono{
@@ -1138,7 +1131,7 @@ textarea::placeholder{
     -webkit-box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.75);
-} 
+}
 .up a {
     display: flex;
     justify-content: center;
@@ -1219,11 +1212,9 @@ textarea::placeholder{
         flex: 0 0 calc(50% - 1rem);
         margin: 0 5px;
     }
-    
     .desc_name{
         padding-left: 0;
     }
-    
     #progressbar{
         display: none;
     }
@@ -1273,7 +1264,6 @@ textarea::placeholder{
     .menuAppear{
         left: 0;
     }
-    
 
     .btnstyle::before,
     .btnstyle::after{
@@ -1301,7 +1291,7 @@ textarea::placeholder{
         transition: .5s ease-in-out;
         cursor: pointer;
     }
-    
+
     #nav-icon3  span {
         display: block;
         position: absolute;
@@ -1327,31 +1317,31 @@ textarea::placeholder{
     #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
         top: 18px;
     }
-    
+
     #nav-icon3 span:nth-child(4) {
         top: 36px;
     }
-    
+
     #nav-icon3.open span:nth-child(1) {
         top: 18px;
         width: 0%;
         left: 50%;
     }
-    
+
     #nav-icon3.open span:nth-child(2) {
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
     }
-    
+
     #nav-icon3.open span:nth-child(3) {
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
-    
+
     #nav-icon3.open span:nth-child(4) {
         top: 18px;
         width: 0%;
@@ -1383,13 +1373,13 @@ textarea::placeholder{
         flex-direction: column;
     }
 
-    .desc .container::before, 
-    .desc .container::after, 
-    .resumen::before, 
-    .resumen::after, 
-    .proyectos::before, 
-    .proyectos::after, 
-    .bgworld::before, 
+    .desc .container::before,
+    .desc .container::after,
+    .resumen::before,
+    .resumen::after,
+    .proyectos::before,
+    .proyectos::after,
+    .bgworld::before,
     .bgworld::after {
         font-size: 30px;
     }

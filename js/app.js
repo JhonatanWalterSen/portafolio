@@ -11,15 +11,11 @@ const  er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[
 
 eventListeners();
 function eventListeners(){
-    // Cuando la App inicia
     document.addEventListener('DOMContentLoaded', iniciarApp)
-
-    // Campos del formulario
     nombre.addEventListener('blur', validarFormulario)
     email.addEventListener('blur', validarFormulario)
     asunto.addEventListener('blur', validarFormulario)
     mensaje.addEventListener('blur', validarFormulario)
-    // enviar formulario
     formulario.addEventListener('click', enviarEmail)
 }
 
@@ -32,8 +28,6 @@ function iniciarApp(){
 function validarFormulario(e){
     console.log(e.target.value)
     if(e.target.value.length > 0){
-
-        // elimina los errores
         const error = document.querySelector('p.error');
         if(error){
             error.remove();
@@ -46,7 +40,7 @@ function validarFormulario(e){
         e.target.style.borderBottomColor= 'none';
         mostrarError('Todos los campos son obligatorios');
     }
-    
+
     if(e.target.type === 'email'){
             if(er.test(e.target.value)){
             // elimina los errores
@@ -68,7 +62,6 @@ function validarFormulario(e){
         btnEnviar.disabled = false;
         btnEnviar.classList.remove('opacity-50');
     }else{
-
     }
 }
 function mostrarError(mensaje){
@@ -78,7 +71,7 @@ function mostrarError(mensaje){
 
     const errores = document.querySelectorAll('.error')
     if(errores.length === 0){
-       formulario.appendChild(mensajeError) 
+        formulario.appendChild(mensajeError)
     }
 }
 
@@ -98,25 +91,20 @@ function menuMobile() {
     const menuEstru = document.querySelector('.navbar .container');
     const items = document.querySelector('.items');
     let imenu = document.querySelector('.menu-tablet-mobile');
-/* 
-    let menuderecha = document.querySelector('.navbar .container'); */
-
         menuOn.addEventListener('click', () => {
             if (brand.classList.contains(none)) {
                 brand.classList.remove(none)
-                items.classList.remove(appear)/* 
-                menuderecha.classList.toggle('flex-end') */
+                items.classList.remove(appear)
             } else{
                 brand.classList.add(none)
                 items.classList.add(appear)
             }
             if (menuEstru.classList.contains(change)) {
                 menuEstru.classList.remove(change)
-                
             } else {
-                menuEstru.classList.add(change) 
+                menuEstru.classList.add(change)
             }
-    }) 
+    })
 }
 menuMobile();
 
@@ -133,6 +121,6 @@ barra();
 
 $(document).ready(function(){
     $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-      $(this).toggleClass('open');
+        $(this).toggleClass('open');
     });
-  });
+});

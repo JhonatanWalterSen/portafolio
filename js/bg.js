@@ -59,7 +59,6 @@ function datosPortafolio() {
                 
             `;
         });
-        // console.log(datos.portafolio[0].titulo);       
         document.querySelector('#webPages').innerHTML = html;
     })
 }
@@ -95,6 +94,32 @@ function datosSkills() {
         document.querySelector('#containerCards').innerHTML = html;
     })
 }
+
+function datosPortafolioReact() {
+    fetch('portafolio.json')
+    .then( (respuesta) => {
+        return respuesta.json();
+    })
+    .then((datos) =>{
+        let html='';
+
+        datos.reactJs.forEach(reactJs => {
+            html += `
+                        <div class="contain__portafolio">
+                            <div class="panels__photo-Desc">
+                                <a href="${reactJs.href}" target="_blank" alt="${reactJs.titulo}"><img src="img/${reactJs.imagen}"></a>
+                                <div class="detalles__proyecto">
+                                    <p class="ptitle">${reactJs.titulo}</p>
+                                    <p class="pdesc">${reactJs.descripcion}</p>
+                                </div>
+                            </div>
+                        </div>
+            `;
+        });
+        document.querySelector('#reactJs').innerHTML = html;
+    })
+}
+datosPortafolioReact()
 datosPortafolio();
 datosSkills();
 

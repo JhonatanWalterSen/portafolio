@@ -1,67 +1,69 @@
 {
     "portafolio" : [
         {
+            "imagen": "webs/Web-PrestamosSencillo.png",
+            "titulo": "Prestamos Sencillo",
+            "descripcion": "LocalStorage - Javascript",
+            "tipo": "Repositorio",
+            "href": "https://jhonatanwaltersen.github.io/prestamos-sencillo/"
+        },
+        {
+            "imagen": "webs/Web-devflix.png",
+            "titulo": "Copia Netflix",
+            "descripcion": "Validaciones Javascript",
+            "tipo": "Repositorio",
+            "href": "https://jhonatanwaltersen.github.io/Similar-Netflix/"
+        },
+        {
+            "imagen": "webs/Web-Mailing.png",
+            "titulo": "E - Mailing",
+            "descripcion": "Tablas en HTML para correos",
+            "tipo": "Repositorio",
+            "href": "https://jhonatanwaltersen.github.io/mailing-ropa/"
+        },
+        {
             "imagen": "webs/Web_MarpTech.png",
             "titulo": "Home MarpTech Group",
-            "descripcion": "HTML CSS CSS CSS3",
+            "descripcion": "FlexBox - Validación con Google Docs",
             "tipo": "Repositorio",
             "href": "https://jhonatanwaltersen.github.io/marptech/"
         },
         {
             "imagen": "webs/Web-CR7.png",
             "titulo": "Simple Page CR7",
-            "descripcion": "HTML CSS CSS CSS3",
+            "descripcion": "FlexBox",
             "tipo": "Repositorio",
             "href": "https://jhonatanwaltersen.github.io/betaCr7/"
         },
         {
             "imagen": "webs/Web-HP.png",
             "titulo": "Libros Online",
-            "descripcion": "HTML CSS CSS CSS3",
+            "descripcion": "Landing - FlexBox",
             "tipo": "Repositorio",
             "href": "https://jhonatanwaltersen.github.io/Biblioteca-virtual/"
         },
         {
-            "imagen": "webs/Web-Mailing.png",
-            "titulo": "Mailing",
-            "descripcion": "HTML CSS CSS CSS3",
-            "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/mailing-ropa/"
-        },
-        {
-            "imagen": "webs/Web-devflix.png",
-            "titulo": "Similar Netflix",
-            "descripcion": "HTML CSS CSS CSS3",
-            "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/Similar-Netflix/"
-        },
-        {
             "imagen": "webs/Web-AdminFlexBox.png",
             "titulo": "Admin con Flex ",
-            "descripcion": "HTML CSS CSS CSS3",
+            "descripcion": "FlexBox",
             "tipo": "Repositorio",
             "href": "https://jhonatanwaltersen.github.io/Admin-Flex/"
-        },
-        {
-            "imagen": "webs/Web-RecetasGrid.png",
-            "titulo": "Recetas con Grid",
-            "descripcion": "HTML CSS CSS CSS3",
-            "tipo": "Repositorio",
-            "href": "#"
-        },
-        {
-            "imagen": "webs/Web-ViajesGrid.png",
-            "titulo": "Viajes con Grid",
-            "descripcion": "HTML CSS CSS CSS3",
-            "tipo": "Repositorio",
-            "href": "#"
         }
     ],
-    "portafolioMobile" :[
+    "reactJs" :[
         {
-            "imagenCode": "imagen codigo de barra para descargar",
-            "Nombre": "Pokedex App",
-            "Tipo": "Fluuter o Android"
+            "imagen": "webs/Web-ControlGastos.png",
+            "titulo": "Control de Gastos ",
+            "descripcion": "useState - useEffect - LocalStorage",
+            "tipo": "Repositorio",
+            "href": "https://vite-react-control-gastos.netlify.app"
+        }
+        ,{
+            "imagen": "webs/Web-ControlCitas.png",
+            "titulo": "Seguimiento Pacientes (Mascotas)",
+            "descripcion": "useState - useEffect - LocalStorage",
+            "tipo": "Repositorio",
+            "href": "https://react-vite-citas-vet.netlify.app"
         }
     ]
-} 
+}
