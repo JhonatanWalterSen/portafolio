@@ -1,15 +1,14 @@
+const preloader = document.querySelector('.preloader');
+
 let preload = () => {
     const fatherblocks = document.querySelectorAll('.preloader .fatherblocks .block');
-    
-// down, left, up , right
-let interval = 0;
-fatherblocks.forEach((block, i) => {
-    setTimeout(() => {
-        animate(block, i);
-    }, interval);
-    interval +=500;
-});
-
+    let interval = 0;
+    fatherblocks.forEach((block, i) => {
+        setTimeout(() => {
+            animate(block, i);
+        }, interval);
+        interval +=500;
+    });
     function animate(block, index){
         let position = index;
         setInterval(() =>{
@@ -37,22 +36,7 @@ fatherblocks.forEach((block, i) => {
 
 preload();
 
-const preloader = document.querySelector('.preloader');
-function finisedLoading(){
-    setTimeout(() => {
-        preloader.style.display = "none";
-    }, 500);
+window.onload = function () {
+    setTimeout(() => preloader.remove(),2500)
 }
-
-
-    // Cuando la pagina carga
-window.onload = function (){
-    finisedLoading();
-}
-
-// window.onload = function () {
-//     setTimeout(() =>{
-//         finisedLoading();
-//     },5000)
-// }
 

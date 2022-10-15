@@ -56,7 +56,6 @@ function datosPortafolio() {
                                 </div>
                             </div>
                         </div>
-                
             `;
         });
         document.querySelector('#webPages').innerHTML = html;

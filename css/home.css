@@ -775,7 +775,7 @@ html,body{
 }
 .blockdate input::placeholder,
 textarea::placeholder{
-    color: #fff;
+    color: #ccc;
 }
 .both{
     flex: 0 0 calc(50% - 5px);
@@ -817,7 +817,6 @@ textarea::placeholder{
     border: 2px solid var(--color-primario);
 }
 
-/* Footer */
 .footer{
     background: var(--color-celeste);
     border-top: 1px solid #2b2b2d;
@@ -835,7 +834,7 @@ textarea::placeholder{
 .icons ul{
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
 .icons ul li{
@@ -1040,60 +1039,14 @@ textarea::placeholder{
     margin-top: 20px;
     padding: 15px 20px;
 }
-::-webkit-scrollbar{
-    width: 0;
-}
-#scrollPath{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10px;
-    height: 100%;
-    z-index: 99;
-    background: rgba(255,255,255,0.05);
-}
-#progressbar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 10px;
-    z-index: 99;
-    background: linear-gradient(to top, #ffce00,#ffce00);
 
-    animation: animate 5s linear infinite;
-}
-@keyframes animate{
-    0%,100%{filter: hue-rotate(#ffce00);}
-    50%{filter: hue-rotate(#1D3357);}
-}
-
-#progressbar::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #ffce00,#ffce00);
-    filter: blur(2px);
-}
-#progressbar::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #ffce00,#ffce00);
-    filter: blur(2px);
-}
 
 .yono{
     border-radius: 50%;
     background-color:#ffce00;
 }
 .mitadSecc::before{
-    content: '<img>';
+    content: '<figure>';
     position: absolute;
     font-family: var(--coder-font);
     font-size: 40px;
@@ -1185,9 +1138,7 @@ textarea::placeholder{
 }
 
 @media screen and (max-width:1025px){
-    #scrollPath {
-        background: none;
-    }
+
     .mitad img {
         width: 30%;
     }
@@ -1240,13 +1191,19 @@ textarea::placeholder{
     }
     .items{
         display: flex;
-        left: -700px;
-        transition: all 1s;
+        transition: all 1.3s ;
         width: 100%;
-        top: 80px;
+        top: -372px;
         position: fixed;
         flex-direction: column;
+        left: 0;
+        z-index: 99;
     }
+    .items a{
+        text-align: center;
+        margin-top: 20px;
+        padding: 15px 20px;
+        }
     .i-menu{
         display: block;
         width: auto;
@@ -1274,11 +1231,10 @@ textarea::placeholder{
         border: 1.5px solid var(--color-secundario);
     }
 
-    /* Icon 3 */
 
     #nav-icon3 {
-        width: 50px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
         position: relative;
         margin: 50px auto;
         -webkit-transform: rotate(0deg);
@@ -1295,7 +1251,7 @@ textarea::placeholder{
     #nav-icon3  span {
         display: block;
         position: absolute;
-        height: 7px;
+        height: 5px;
         width: 100%;
         background: var(--color-secundario);
         border-radius: 9px;
@@ -1315,11 +1271,11 @@ textarea::placeholder{
         top: 0px;
     }
     #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-        top: 18px;
+        top: 15px;
     }
 
     #nav-icon3 span:nth-child(4) {
-        top: 36px;
+        top: 30px;
     }
 
     #nav-icon3.open span:nth-child(1) {
@@ -1355,6 +1311,7 @@ textarea::placeholder{
     }
 }
 
+
 @media screen and (max-width:630px){
     .containerCards .card {
         margin-bottom: 30px;
@@ -1371,6 +1328,9 @@ textarea::placeholder{
     }
     .twodates {
         flex-direction: column;
+    }
+    form input{
+        margin-bottom: 15px;
     }
 
     .desc .container::before,
@@ -1446,6 +1406,13 @@ textarea::placeholder{
     }
     .panels__photo-Desc {
         width: 100%;
+    }
+    #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+        top: 12px;
+    }
+
+    #nav-icon3 span:nth-child(4) {
+        top: 24px;
     }
 }
 

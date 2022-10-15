@@ -24,7 +24,7 @@ function iniciarApp(){
     btnEnviar.disabled = true;
     btnEnviar.classList.add('opacity-50');
 }
-//  Valida el fornulario
+
 function validarFormulario(e){
     console.log(e.target.value)
     if(e.target.value.length > 0){
@@ -43,7 +43,6 @@ function validarFormulario(e){
 
     if(e.target.type === 'email'){
             if(er.test(e.target.value)){
-            // elimina los errores
             const error = document.querySelector('p.error');
             if(error){
                 error.remove();
@@ -108,15 +107,6 @@ function menuMobile() {
 }
 menuMobile();
 
-function barra() {
-    let progress = document.getElementById('progressbar');
-    let totalhe = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function (){
-        let progressHe = (window.pageYOffset / totalhe) * 100;
-        progress.style.height = progressHe + "%";
-    }
-}
-barra();
 
 
 $(document).ready(function(){
