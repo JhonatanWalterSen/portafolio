@@ -9,7 +9,6 @@
     --x10:10;
     --x100:100;
     --x1000:1000;
-    --Lexend:'Lexend Deca', sans-serif;
     --Raleway:'Raleway', sans-serif;
     --Open:'Open Sans', sans-serif;
     --coder-font: 'Reenie Beanie';
@@ -17,6 +16,7 @@
 
 html,body{
     scroll-behavior: smooth;
+    padding: 0 !important;
 }
 *{
     margin: 0;
@@ -53,6 +53,10 @@ html,body{
     flex: .2;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
+}
+.brand img{
+    width: 50px;
 }
 .brandText{
     font-family: var(--titi);
@@ -772,6 +776,10 @@ html,body{
     border-right: none;
     border-top: none;
     border-left: none;
+    max-width: 100%;
+}
+.textArea{
+    resize: none;
 }
 .blockdate input::placeholder,
 textarea::placeholder{
@@ -1096,6 +1104,10 @@ textarea::placeholder{
     width: 85%;
 }
 
+.activoBtn{
+    background: #58a345 !important;
+}
+
 @media screen and (max-width:1500px){
     .navbar .container,
     .container,
@@ -1208,6 +1220,7 @@ textarea::placeholder{
         display: block;
         width: auto;
         text-align: right;
+        z-index: 100;
     }
     .i-menu img{
         width: 40px;
