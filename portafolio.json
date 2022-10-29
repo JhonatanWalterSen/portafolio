@@ -5,49 +5,56 @@
             "titulo": "Prestamos Sencillo",
             "descripcion": "LocalStorage - Javascript",
             "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/prestamos-sencillo/"
+            "href": "https://jhonatanwaltersen.github.io/prestamos-sencillo/",
+            "slug": "prestamos-sencillo"
         },
         {
             "imagen": "webs/Web-devflix.png",
             "titulo": "Copia Netflix",
             "descripcion": "Validaciones Javascript",
             "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/Similar-Netflix/"
+            "href": "https://jhonatanwaltersen.github.io/Similar-Netflix/",
+            "slug": "devflix"
         },
         {
             "imagen": "webs/Web-Mailing.png",
             "titulo": "E - Mailing",
             "descripcion": "Tablas en HTML para correos",
             "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/mailing-ropa/"
+            "href": "https://jhonatanwaltersen.github.io/mailing-ropa/",
+            "slug": "mailing"
         },
         {
             "imagen": "webs/Web_MarpTech.png",
             "titulo": "Home MarpTech Group",
             "descripcion": "FlexBox - Validación con Google Docs",
             "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/marptech/"
+            "href": "https://jhonatanwaltersen.github.io/marptech/",
+            "slug": "landing-marptech"
         },
         {
             "imagen": "webs/Web-CR7.png",
             "titulo": "Simple Page CR7",
             "descripcion": "FlexBox",
             "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/betaCr7/"
+            "href": "https://jhonatanwaltersen.github.io/betaCr7/",
+            "slug": "landing-cr7"
         },
         {
             "imagen": "webs/Web-HP.png",
             "titulo": "Libros Online",
             "descripcion": "Landing - FlexBox",
             "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/Biblioteca-virtual/"
+            "href": "https://jhonatanwaltersen.github.io/Biblioteca-virtual/",
+            "slug": "libros-sencillo"
         },
         {
             "imagen": "webs/Web-AdminFlexBox.png",
             "titulo": "Admin con Flex ",
             "descripcion": "FlexBox",
             "tipo": "Repositorio",
-            "href": "https://jhonatanwaltersen.github.io/Admin-Flex/"
+            "href": "https://jhonatanwaltersen.github.io/Admin-Flex/",
+            "slug": "admin-flex-box"
         }
     ],
     "reactJs" :[

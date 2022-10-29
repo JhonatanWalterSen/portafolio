@@ -46,13 +46,26 @@ function datosPortafolio() {
         let html='';
         // console.log(datos.portafolioMobile)
         datos.portafolio.forEach(portafolio => {
+            const {titulo,descripcion,href,slug,imagen} = portafolio
             html += `
                         <div class="contain__portafolio">
                             <div class="panels__photo-Desc">
-                                <a href="${portafolio.href}" target="_blank" alt="${portafolio.titulo}"><img src="img/${portafolio.imagen}"></a>
-                                <div class="detalles__proyecto">
-                                    <p class="ptitle">${portafolio.titulo}</p>
-                                    <p class="pdesc">${portafolio.descripcion}</p>
+                                <img src="img/${imagen}">
+                                <div>
+                                    <p class="ptitle text-center" >${titulo}</p>
+                                    <div class="d-flex justify-content-around pb-2">
+                                        <button class="btn btn-primary ptitle" type="button" data-toggle="collapse" data-target="#${slug}" aria-expanded="false" aria-controls="${slug}">
+                                            Tecnologías
+                                        </button>
+                                        <a href="${href}" target="_blank" alt="${titulo}" class="btn bg-amarillo font-titi" >
+                                            Ver Proyecto
+                                        </a>
+                                    </div>
+                                    <div class="collapse" id="${slug}">
+                                    <div class="">
+                                        ${descripcion}
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

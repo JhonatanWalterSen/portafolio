@@ -79,7 +79,15 @@ function enviarEmail(){
     formulario.reset()
     btnEnviar.disabled = true;
     btnEnviar.classList.remove('activoBtn')
+    quitarBordes()
 }
+function quitarBordes() {
+    const bordes = document.querySelectorAll('#enviarMail input'),
+        bordeTxtArea = document.querySelector('.textArea')
+    bordeTxtArea.style.borderBottomColor= 'white'
+    bordes.forEach(cajas => cajas.style.borderBottomColor= 'white')
+}
+
 
 function menuMobile() {
     let change = 'change';

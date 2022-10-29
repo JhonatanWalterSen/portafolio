@@ -39,6 +39,7 @@ html,body{
     -webkit-box-shadow: 0px 25px 52px -24px rgba(0,0,0,0.27);
     -moz-box-shadow: 0px 25px 52px -24px rgba(0,0,0,0.27);
     box-shadow: 0px 25px 52px -24px rgba(0,0,0,0.27);
+    padding: 0px !important;
 }
 .navbar .container{
     width: 1440px;
@@ -927,13 +928,13 @@ textarea::placeholder{
 }
 .panels__photo-Desc:hover{
     background:  #192532;
-    transform: scale(1.09);
+    transform: scale(1.02);
     transition: 1s all;
 }
 .panels__photo-Desc img{
     width: 100%;
-    height:  100%;
-    padding: 10px;
+    height: 100%;
+    padding-bottom: 10px;
 }
 .detalles__proyecto{
     padding: 0px 15px;
@@ -944,10 +945,13 @@ textarea::placeholder{
 }
 .ptitle{
     color: var(--color-secundario);
-    font-family: var(--Raleway);
+    font-family: var(--titi);
+    font-size: 15px;
+}
+.font-titi{
+    font-family: var(--titi);
     font-size: 14px;
     padding-bottom: 10px;
-    text-align: left;
 }
 .pdesc{
     color: var(--blanco);
@@ -1107,6 +1111,9 @@ textarea::placeholder{
 .activoBtn{
     background: #58a345 !important;
 }
+.bg-amarillo{
+    background-color: var(--color-secundario);
+}
 
 @media screen and (max-width:1500px){
     .navbar .container,
@@ -1247,9 +1254,8 @@ textarea::placeholder{
 
     #nav-icon3 {
         width: 40px;
-        height: 30px;
         position: relative;
-        margin: 50px auto;
+        margin: -17px auto;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
