@@ -1012,7 +1012,6 @@ textarea::placeholder{
 }
 .btnstyle:hover::after{
     transform: scaleX(0);
-    
 }
 
 .boxinfot__footer{
@@ -1113,6 +1112,13 @@ textarea::placeholder{
 }
 .bg-amarillo{
     background-color: var(--color-secundario);
+}
+.contenido-detalle-proyecto {
+    padding: 10px;
+    color: white;
+}
+.contenido-detalle-proyecto p{
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width:1500px){

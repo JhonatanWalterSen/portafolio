@@ -42,11 +42,11 @@ function datosPortafolio() {
         return respuesta.json();
     })
     .then((datos) =>{
-        console.log(datos);
         let html='';
         // console.log(datos.portafolioMobile)
         datos.portafolio.forEach(portafolio => {
-            const {titulo,descripcion,href,slug,imagen} = portafolio
+            const {titulo,descripcion,href,slug,imagen,tecnologias} = portafolio
+
             html += `
                         <div class="contain__portafolio">
                             <div class="panels__photo-Desc">
@@ -62,8 +62,10 @@ function datosPortafolio() {
                                         </a>
                                     </div>
                                     <div class="collapse" id="${slug}">
-                                    <div class="">
-                                        ${descripcion}
+                                    <div class="contenido-detalle-proyecto">
+                                        <div>
+                                            <p>${descripcion}</p>
+                                        </div>
                                     </div>
                                     </div>
                                 </div>
